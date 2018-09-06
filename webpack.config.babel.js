@@ -124,6 +124,8 @@ const config = {
               options: {
                 importLoaders: 1,
                 minimize: true,
+                modules: useCssModules,
+                localIdentName: '[local]-[hash:base64:5]',
               },
             },
             {
