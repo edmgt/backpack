@@ -1,6 +1,6 @@
 {
   "name": "bpk-component-tooltip",
-  "version": "3.1.74",
+  "version": "3.1.75-alpha.1+ce6e74e29",
   "description": "Backpack tooltip component.",
   "main": "index.js",
   "repository": {
@@ -14,13 +14,13 @@
   },
   "dependencies": {
     "@skyscanner/popper.js": "^1.12.9-beta.1",
-    "bpk-mixins": "^17.19.1",
+    "bpk-mixins": "^17.19.2-alpha.1+ce6e74e29",
     "bpk-react-utils": "^2.7.6",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "bpk-component-text": "^1.0.119",
+    "bpk-component-text": "^1.0.120-alpha.1+ce6e74e29",
     "bpk-tokens": "^27.6.0"
   },
-  "gitHead": "edd14f16dc571cc009d908c3c8f7d27a428b6de8"
+  "gitHead": "ce6e74e29fcb579a379eb99143be6ea1a50c602d"
 }

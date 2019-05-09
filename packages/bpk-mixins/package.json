@@ -1,6 +1,6 @@
 {
   "name": "bpk-mixins",
-  "version": "17.19.1",
+  "version": "17.19.2-alpha.1+ce6e74e29",
   "description": "Sass mixins and variables for Backpack.",
   "main": "_index.scss",
   "repository": {
@@ -19,5 +19,5 @@
   "peerDependencies": {
     "node-sass": "^4.1.1"
   },
-  "gitHead": "edd14f16dc571cc009d908c3c8f7d27a428b6de8"
+  "gitHead": "ce6e74e29fcb579a379eb99143be6ea1a50c602d"
 }

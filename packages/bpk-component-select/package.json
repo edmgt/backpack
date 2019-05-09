@@ -1,6 +1,6 @@
 {
   "name": "bpk-component-select",
-  "version": "2.2.60",
+  "version": "2.2.61-alpha.1+ce6e74e29",
   "description": "Backpack select component.",
   "main": "index.js",
   "repository": {
@@ -13,9 +13,9 @@
     "react": "^15.0.0 || ^16.0.0"
   },
   "dependencies": {
-    "bpk-mixins": "^17.19.1",
+    "bpk-mixins": "^17.19.2-alpha.1+ce6e74e29",
     "bpk-react-utils": "^2.7.6",
     "prop-types": "^15.6.2"
   },
-  "gitHead": "edd14f16dc571cc009d908c3c8f7d27a428b6de8"
+  "gitHead": "ce6e74e29fcb579a379eb99143be6ea1a50c602d"
 }
