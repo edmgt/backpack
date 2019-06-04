@@ -33,8 +33,19 @@ const getClassName = cssModules(STYLES);
   Further reading about Refs: https://facebook.github.io/react/docs/refs-and-the-dom.html
  */
 
+const handleBlur = event => {
+  // TODO Select top option if options > 0
+  // A "normal" selection will trigger onBlur by definition... 🤔
+  console.log(`changing`);
+  // if (onChange) {
+  //   const generatedEvent = { target: { value: 'Barcelona (BCN)' } };
+  //   onChange(generatedEvent);
+  // }
+};
+
 Autosuggest.defaultProps.theme = {
   container: getClassName('bpk-autosuggest__container'),
+  //onBlur: handleBlur,
   containerOpen: getClassName('bpk-autosuggest__container--open'),
   suggestionsContainer: getClassName('bpk-autosuggest__suggestions-container'),
   suggestionsContainerOpen: getClassName(
@@ -50,17 +61,31 @@ Autosuggest.defaultProps.theme = {
 };
 
 Autosuggest.defaultProps.renderInputComponent = inputProps => {
-  const { ref, inputRef, autoComplete = 'off', ...rest } = inputProps;
+  const {
+    ref,
+    onBlur,
+    inputRef,
+    autoComplete = 'off',
+    onChange,
+    ...rest
+  } = inputProps;
+
+  const handleBlur = event => {
+    if (onBlur) {
+      onBlur(event);
+    }
+  };
 
   return (
     <BpkInput
+      onBlur={handleBlur}
       inputRef={element => {
         ref(element);
-
         if (typeof inputRef === 'function') {
           inputRef(element);
         }
       }}
+      onChange={onChange}
       autoComplete={autoComplete}
       {...rest}
     />
